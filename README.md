@@ -1,49 +1,3 @@
-<<<<<<< HEAD
-# default
-
-## Project setup
-
-```
-# yarn
-yarn
-
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-### Compiles and hot-reloads for development
-
-```
-# yarn
-yarn dev
-
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-```
-
-### Compiles and minifies for production
-
-```
-# yarn
-yarn build
-
-# npm
-npm run build
-
-# pnpm
-pnpm build
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://vitejs.dev/config/).
-=======
 # catrsys.github.io
 
 This template should help get you started developing with Vue 3 in Vite.
@@ -90,4 +44,3 @@ npm run build
 ```sh
 npm run lint
 ```
->>>>>>> 1be97a154939b5100a2366580db50bb45e0a628c
