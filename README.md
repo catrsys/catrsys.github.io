@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # default
 
 ## Project setup
@@ -90,4 +89,3 @@ npm run build
 ```sh
 npm run lint
 ```
->>>>>>> 1be97a154939b5100a2366580db50bb45e0a628c
