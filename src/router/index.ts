@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
+
 import ProfileView from "../views/ProfileView.vue";
 
 const router = createRouter({

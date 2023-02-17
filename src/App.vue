@@ -61,12 +61,10 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
-
 v-main {
   margin: 0;
   background: linear-gradient(45deg, #3df2cb, #300573) !important;
 }
-
 .border-bottom {
   border-width: 0 0 1px 0 !important;
 }
