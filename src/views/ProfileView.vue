@@ -7,8 +7,14 @@
   import avatar from '@/assets/avatar.jpg'
   import github from '@/assets/github-logo.png'
   import telegram from '@/assets/telegram-logo.png'
+ 
+  import { useDisplay } from 'vuetify';
+import vuetify from '@/plugins/vuetify';
 
+  const { smAndUp } = useDisplay();
   const { likes } = storeToRefs(useSettings());
+
+  console.log(vuetify.theme.current.value.colors.warning);
 
   const education = [
     {
@@ -134,8 +140,9 @@
 
 <template>
   <v-card class="mt-3 mx-3 bg-transparent" elevation="0">
+    <div class="text-center text-h3 styled">Hi, my name is</div>
     <v-card-title class="text-h2 text-center styled mb-5 pb-5">
-      Hi, my name is <span class="gradient">catrsys</span>
+      <span class="gradient">catrsys</span>
     </v-card-title>
     <v-card-text>
       <v-row>
@@ -241,7 +248,7 @@
             </v-card-title>
             <v-card-text>
               <v-row class="flex-nowrap mx-6 mb-6">
-                <v-col md="2" lg="1" class="align-self-center">
+                <v-col md="2" lg="1" class="align-self-center flex-shrink-1">
                   <a
                     href="#"
                     class="mr-5"
@@ -265,8 +272,8 @@
       <v-divider class="ma-5"></v-divider>
     </v-card-text>
     <v-card-actions class="px-10">
-      <v-row>
-        <v-col sm="4" xs="12" class="align-self-center">
+      <v-row class="flex-nowrap">
+        <v-col sm="4" xs="12" class="align-self-center flex-grow-1">
           <a
           v-for="(avatar, index) in avatars"
           :key="index"
@@ -280,10 +287,10 @@
           </v-avatar>
         </a>
         </v-col>
-        <v-col sm="4" xs="12" class="align-self-center text-center">
+        <v-col v-if="smAndUp" sm="4" xs="12" class="align-self-center text-center flex-shrink-1">
           © 2023
         </v-col>
-        <v-col sm="4" xs="12" class="align-self-center text-right">
+        <v-col sm="4" xs="12" class="align-self-center text-right flex-grow-1">
           <v-spacer></v-spacer>
           {{ likes }}
           <v-btn size="x-large" variant="text" icon="mdi-heart-outline" color="pink-lighten-2" @click="likes++"></v-btn>
@@ -302,6 +309,6 @@
 }
 
 .bg-gradient {
-  background: linear-gradient(90deg, #2196F3, #4CAF50);
+  background: linear-gradient(90deg, #2196F3, #4CAF50, #FB8C00);
 }
 </style>
