@@ -9,7 +9,7 @@
   import telegram from '@/assets/telegram-logo.png'
  
   import { useDisplay } from 'vuetify';
-import vuetify from '@/plugins/vuetify';
+  import vuetify from '@/plugins/vuetify';
 
   const { smAndUp } = useDisplay();
   const { likes } = storeToRefs(useSettings());
