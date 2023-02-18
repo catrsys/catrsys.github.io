@@ -9,12 +9,9 @@
   import telegram from '@/assets/telegram-logo.png'
  
   import { useDisplay } from 'vuetify';
-  import vuetify from '@/plugins/vuetify';
 
   const { smAndUp } = useDisplay();
   const { likes } = storeToRefs(useSettings());
-
-  console.log(vuetify.theme.current.value.colors.warning);
 
   const education = [
     {
