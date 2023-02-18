@@ -44,7 +44,7 @@
       </v-col>
       <v-col class="py-2 fill-height text-right text-white">
         <h1 class="py-1">{{ displayNumber }}</h1>
-        <span class="text-subtitle-1">{{ props.title }}</span>
+        <span class="text-subtitle-1 styled">{{ props.title }}</span>
       </v-col>
     </v-row>
   </v-card>
