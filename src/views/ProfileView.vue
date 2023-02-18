@@ -135,7 +135,7 @@
 <template>
   <v-card class="mt-3 mx-3 bg-transparent" elevation="0">
     <v-card-title class="text-h2 text-center styled mb-5 pb-5">
-      Hello, my name is <span class="gradient">catrsys</span>
+      Hi, my name is <span class="gradient">catrsys</span>
     </v-card-title>
     <v-card-text>
       <v-row>
